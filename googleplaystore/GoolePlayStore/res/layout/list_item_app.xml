@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/list_item_bg_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+       
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_default" 
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text="有缘网"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/rb_star"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/iv_icon"
+            	android:isIndicator="true"
+                android:progressDrawable="@drawable/custom_ratingbar"
+                android:rating="2" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rb_star"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text="3.7MB"
+                android:textColor="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_name"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_download" />
+                
+                <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:textSize="16sp" 
+                />
+            </LinearLayout>
+
+      
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    
+      <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:padding="5dp"
+                android:text="产品介绍 : 有缘是时下最受大众单身男女喜欢的网站哈哈哈哈哈哈哈"
+                android:singleLine="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp" />
+</LinearLayout>
